@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>INVOICE</h2>
+    <h3 id="company-name">[Your Company Name]</h3>
+    <p id="company-address">[Your Company Address]</p>
+
+    <p>Invoice Date: <span id="invoice-date">[Date]</span> Invoice Number: <span id="invoice-number">[Invoice Number]</span></p>
+
+    <h4>Bill To:</h4>
+    <p>
+        <span id="customer-name">[Customer Name]</span><br>
+        <span id="customer-address">[Customer Address]</span><br>
+        Customer Phone Number: <span id="customer-phone">[Customer Phone Number]</span><br>
+        Alternative Phone Number: <span id="alternative-phone">[Alternative Phone Number]</span>
+    </p>
+
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Rate</th>
+            <th>GST%</th>
+            <th>Amount</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td id="product-name-1">[Product 1 Name]</td>
+            <td id="quantity-1">[Qty]</td>
+            <td id="rate-1">[Rate]</td>
+            <td id="gst-1">[GST%]</td>
+            <td id="amount-1">[Amount]</td>
+            <td id="subtotal-1">[Subtotal]</td>
+        </tr>
+        <tr>
+            <td id="product-name-2">[Product 2 Name]</td>
+            <td id="quantity-2">[Qty]</td>
+            <td id="rate-2">[Rate]</td>
+            <td id="gst-2">[GST%]</td>
+            <td id="amount-2">[Amount]</td>
+            <td id="subtotal-2">[Subtotal]</td>
+        </tr>
+        <!-- Add more product rows as needed -->
+    </table>
+
+    <h4>Payment Details:</h4>
+    <p>[Payment Method]: <span id="payment-details">[Payment Details]</span></p>
+
+    <p>Address: <span id="company-address">[Your Company Address]</span></p>
+    <p>Mobile: <span id="mobile-number">[Your Mobile Number]</span></p>
+
+    <p>Thank you for your business!</p>
+</div>
+
+<script>
+        // JavaScript code to update invoice data dynamically
+
+        // Example usage:
+        document.getElementById("company-name").textContent = "Your Company Name";
+        document.getElementById("company-address").textContent = "Your Company Address";
+        document.getElementById("invoice-date").textContent = "2023-07-10";
+        document.getElementById("invoice-number").textContent = "INV-001";
+        document.getElementById("customer-name").textContent = "John Doe";
+        document.getElementById("customer-address").textContent = "123 Main Street";
+        document.getElementById("customer-phone").textContent = "555-1234";
+        document.getElementById("alternative-phone").textContent = "555-5678";
+        document.getElementById("product-name-1").textContent = "Product A";
+        document.getElementById("quantity-1").textContent = "2";
+        document.getElementById("rate-1").textContent = "$10";
+        document.getElementById("gst-1").textContent = "5%";
+        document.getElementById("amount-1").textContent = "$20";
+        document.getElementById("subtotal-1").textContent = "$20";
+
+        // Add more JavaScript code to update other elements as needed
+
+    </script>
+</body>
+</html>
